@@ -1,9 +1,68 @@
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 88vh;
   width: 100vw;
   background-color: #0e0d12;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.7;
+
+
+  .wrap {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2vw;
+    background-color: indigo;
+    max-width: 1200px;
+    width: 100%;
+    height: 80%;
+
+    .rowNav {
+      background-color: aqua;
+      display: grid;
+      /*grid-template-rows: 1fr 2fr;*/
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2vw;
+
+      .menu {
+        background-color: #ff6000;
+      }
+
+      .ad {
+        background-color: green;
+      }
+
+    }
+
+    .rowAd {
+      background-color: red;
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      grid-gap: 2vw;
+
+      .instruction {
+        background-color: gold;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /*opacity: 1;*/
+
+        .title {
+          font-family: 'Oswald', sans-serif;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-size: 3em;
+          font-weight: 500;
+        }
+      }
+
+      .twoAd {
+        background-color: black;
+      }
+    }
+  }
 }
