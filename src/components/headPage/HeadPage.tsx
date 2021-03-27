@@ -2,7 +2,8 @@ import React from 'react';
 import s from './HeadPage.module.scss';
 import {ammunition, background, instruction} from './backgroudImg';
 import {ItemList} from '../ItemList/ItemList';
-import { slider } from '../slider/Slider';
+import {slider} from '../slider/Slider';
+import {Button} from '../button/Button';
 
 export function HeadPage() {
 
@@ -21,6 +22,9 @@ export function HeadPage() {
                         <div className={s.cont}>
                             <h3 className={s.title}>Instruction</h3>
                             <p className={s.text}>Let our experienced staff assist you</p>
+                        </div>
+                        <div className={s.button}>
+                            <Button title={"find out more"}/>
                         </div>
                     </div>
                     <div style={ammunition} className={s.ammunition}>

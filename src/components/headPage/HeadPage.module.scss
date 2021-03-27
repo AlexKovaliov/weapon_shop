@@ -45,6 +45,7 @@
       grid-gap: 2vw;
 
       .instruction {
+        position: relative;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -57,14 +58,40 @@
         }
 
         .cont {
+          display: flex;
+          flex-direction: column;
           height: 50%;
           width: 50%;
           margin: 25px 25px;
         }
+
+        .button {
+          display: flex;
+          align-items: flex-end;
+          margin: 25px 25px;
+          height: 25%;
+          width: 50%;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 5px;
+          transition: all 1s ease;
+        }
+
+        &:hover:before {
+          width: 100%;
+        }
       }
 
       .ammunition {
-
+        position: relative;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -81,6 +108,22 @@
         &:hover {
           color: #ff6000;
           cursor: pointer;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 5px;
+          transition: all 0.5s ease;
+        }
+
+        &:hover:before {
+          width: 100%;
         }
       }
     }
