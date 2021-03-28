@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .content {
+    margin-bottom: 7em;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    max-width: 1200px;
+    width: 100%;
+  }
+}

@@ -7,9 +7,5 @@ type ButtonPropsType = {
 }
 
 export function Button(props: ButtonPropsType) {
-    return (
-        <div className={s.button}>
-            <button onClick={props.onClick}>{props.title}</button>
-        </div>
-    )
+    return <button className={s.btnWpar} onClick={props.onClick}>{props.title}</button>
 }

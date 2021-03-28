@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 284px;
+  height: 400px;
+  align-items: center;
+  border: 1px solid #878786;
+
+  .imgGun {
+    width: 100%;
+    height: 90%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .titleWrap {
+    width: 100%;
+
+    .title {
+      font-size: 14px;
+      line-height: 1.59;
+      font-weight: 600;
+      letter-spacing: .8px;
+      padding: 1.4em 2.1em 2.1em;
+      text-align: left;
+      font-family: "Titillium Web", sans-serif;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b28;
+
+    .price {
+      font-family: 'Oswald', sans-serif;
+      font-size: 25px;
+      text-align: left;
+      margin-left: 1.2em;
+      font-weight: 500;
+      line-height: 1.28;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 0 15px;
+    }
+
+    .cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 50px;
+      cursor: pointer;
+      margin: 0;
+      background-color: #ff6000;
+
+      img {
+        height: 25px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &:hover {
+        background-color: #0e0d12;
+      }
+    }
+  }
+}

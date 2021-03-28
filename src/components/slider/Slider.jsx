@@ -6,6 +6,9 @@ import shield from '../../img/slider/MP9-Shield-EZ-770.jpg'
 import pistol from '../../img/slider/AS9I0112.jpg'
 import bexar from '../../img/slider/bexar-arms-TUjn-uSZRJg-unsplash.jpg'
 import steve from '../../img/slider/steve-woods-cD2eM-TkE68-unsplash.jpg'
+import markus from '../../img/slider/markus-spiske-htVYjGltyiU-unsplash.jpg'
+import norbert from '../../img/slider/norbert-buduczki-Va5Zhmii0_4-unsplash.jpg'
+import thomas from '../../img/slider/thomas-tucker-2q3RH6grop4-unsplash.jpg'
 import stngr from '../../img/slider/stngr-industries-D6egwLuXVDU-unsplash (1).jpg'
 
 
@@ -24,5 +27,8 @@ export const slider = (
         <div data-src={bexar}/>
         <div data-src={steve}/>
         <div data-src={stngr}/>
+        <div data-src={norbert}/>
+        <div data-src={thomas}/>
+        <div data-src={markus}/>
     </AutoplaySlider>
 );
