@@ -1,18 +1,17 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/header/Header";
-import {HeadPage} from './components/headPage/HeadPage';
-import {Products} from "./components/products/Products";
 import {LoginPage} from './components/loginModal/LoginPage';
+import {BrowserRouter, Route} from "react-router-dom";
+import {HomePage} from "./components/homePage/HomePage";
 
 function App() {
     return (
-        <div className="App">
-          {/*  <Header/>
-            <HeadPage/>
-            <Products/>*/}
-            <LoginPage/>
-        </div>
+        <BrowserRouter>
+            <div className="App">
+                <Route path='/home' render={() => <HomePage/>}/>
+                <Route path='/login' render={() => <LoginPage/>}/>
+            </div>
+        </BrowserRouter>
     );
 }
 

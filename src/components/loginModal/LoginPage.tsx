@@ -4,6 +4,7 @@ import {Login} from "./Login/Login";
 import {login_bc} from "../headPage/backgroudImg";
 import {Button} from "../button/Button";
 import {Register} from "./Register/Register";
+import {NavLink} from "react-router-dom";
 
 export function LoginPage() {
     const [register, setRegister] = useState(false)
@@ -22,7 +23,9 @@ export function LoginPage() {
                     }}/>
                 </div>
                 <div className={s.close}>
-                    <Button title={'x'}/>
+                    <NavLink to="/home">
+                        <Button title={'x'}/>
+                    </NavLink>
                 </div>
             </div>
 
@@ -32,5 +35,3 @@ export function LoginPage() {
         </div>
     )
 }
-
-
