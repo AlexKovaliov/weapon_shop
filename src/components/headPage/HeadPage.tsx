@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './HeadPage.module.scss';
 import {ammunition, background, instruction} from './backgroudImg';
-import {ItemList} from '../ItemList/ItemList';
+import {ItemList} from '../itemList/ItemList';
 import {slider} from '../slider/Slider';
 import {Button} from '../button/Button';
 

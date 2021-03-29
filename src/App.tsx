@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/header/Header";
 import {HeadPage} from './components/headPage/HeadPage';
 import {Products} from "./components/products/Products";
+import {LoginPage} from './components/loginModal/LoginPage';
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Header/>
             <HeadPage/>
             <Products/>
+            <LoginPage/>
         </div>
     );
 }
