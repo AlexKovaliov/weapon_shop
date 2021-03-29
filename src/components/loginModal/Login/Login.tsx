@@ -17,8 +17,9 @@ export function Login() {
                 </div>
                 <div className={s.btnWrap}>
                     <Button title={"login"}/>
+                    <img src={logo}/>
                 </div>
-                <img src={logo}/>
+                <p style={{fontSize: '15px', color: 'red'}}>Do not give your login and password to anyone.</p>
             </div>
         </div>
     )

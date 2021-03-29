@@ -27,7 +27,6 @@ export function Register() {
                 <Button title={"register"}/>
                 <img src={logo}/>
             </div>
-
         </div>
     )
 }

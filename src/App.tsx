@@ -8,9 +8,9 @@ import {LoginPage} from './components/loginModal/LoginPage';
 function App() {
     return (
         <div className="App">
-            <Header/>
+          {/*  <Header/>
             <HeadPage/>
-            <Products/>
+            <Products/>*/}
             <LoginPage/>
         </div>
     );
