@@ -39,6 +39,10 @@
         margin-right: 30px;
         text-decoration: none;
         color: #ff6000;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       input {

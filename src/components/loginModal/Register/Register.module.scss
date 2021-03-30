@@ -37,6 +37,10 @@
     a {
       text-decoration: none;
       color: #ff6000;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

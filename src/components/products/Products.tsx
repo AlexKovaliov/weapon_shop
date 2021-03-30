@@ -1,7 +1,7 @@
 import React from 'react';
 import {Title} from '../title/Title';
 import s from './Products.module.scss';
-import {riflesStore} from './rifles';
+import {riflesStore} from './rifles/rifles';
 import {ProductItem} from "./ProductItem/ProductItem";
 
 
@@ -10,9 +10,9 @@ export function Products() {
         <div className={s.container}>
             <Title title={"Featured products"}/>
             <div className={s.content}>
-                {riflesStore.map((el, index) => {
+                {riflesStore.map((el) => {
                     return <div>
-                        <ProductItem key={index} title={el.title} img={el.img} price={el.price}/>
+                        <ProductItem key={el.id} title={el.title} img={el.img} price={el.price}/>
                     </div>
                 })}
             </div>
