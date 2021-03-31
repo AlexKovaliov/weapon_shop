@@ -9,7 +9,7 @@ import ruger from '../../../img/products/rifles/ruger.png'
 import { v1 } from 'uuid'
 
 
-export type DataType = {
+export type RiflesDataType = {
     id: string
     title: string
     description: string
@@ -19,7 +19,7 @@ export type DataType = {
     price: string
 } []
 
-export const riflesStore: DataType = [
+export const riflesStore: RiflesDataType = [
     {
         id: v1(),
         title: "Rossi RL22, Lever Action, 22 LR, 18\" Barrel, Blued, Synthetic Stock, Adjustable Sights, 15Rd",

@@ -4,6 +4,7 @@ import {LoginPage} from './components/loginModal/LoginPage';
 import {BrowserRouter, Redirect, Route} from "react-router-dom";
 import {HomePage} from "./components/homePage/HomePage";
 
+
 function App() {
     return (
         <div className="App">
